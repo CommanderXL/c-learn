@@ -1,11 +1,11 @@
 #include <stdio.h>
-#define NUMBER 80    //学生人数
+#define NUMBER 80           //人数上限
 
 int main(void) {
     int i, j;
-    int num;
-    int tensu[NUMBER];
-    int bunpu[11] = {0};
+    int num;                //实际的人数
+    int tensu[NUMBER];      //学生人数
+    int bunpu[11] = {0};    //分布图
 
     printf("请输入学生的人数");
     do {
