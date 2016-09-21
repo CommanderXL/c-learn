@@ -25,7 +25,7 @@ int rev_int(int num) {
 }
 
 int main(void) {
-    int nx = scan_unit();
+    int nx = scan_unit();   //可以通过函数返回值来初始化变量
 
     printf("该整数倒转后的值是: %d\n", rev_int(nx));
 
