@@ -5,19 +5,22 @@
 
 int search(int vc[], int key, int no) {
     int i = 0;
+
+    vc[no] = key;
+
     while(1) {
-        if(i == no) {
-            return FAILED;
-        } else if(vc[i] == key){
-            return (i);
+        if(vc[i] == key) {
+            break;
         }
         i++;
     }
+
+    return (i == no ? FAILED : i);
 }
 
 int main(void) {
     int i, ky, idx;
-    int vx[NUMBER];
+    int vx[NUMBER + 1];
 
     for(i = 0; i < NUMBER; i++) {
         printf("vx[%d]", i);
