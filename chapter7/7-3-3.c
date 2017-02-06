@@ -6,10 +6,9 @@ int inverse(unsigned x, int pos) {
   for(; i < pos; i++) {
     n *= 2;
   }
-  printf("%d\n", n);
+
   x >>= (pos - 1);
   l = x & 1U;
-  printf("%d\n", l == 1 ? -n : n); 
 
   return l == 1 ? -n : n;
 }
