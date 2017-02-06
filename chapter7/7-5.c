@@ -20,7 +20,7 @@ int int_bits(void) {
 void print_bits(unsigned x) {
   int i;
   for(i = int_bits() - 1; i >= 0; i--) {  // 循环的次数,用以输出位串的内容
-    putchar(((x >> i) & 1U) ? '1' : '0');
+    putchar(((x >> i) & 1U) ? '1' : '0'); // x >> i 代表将x右移i位,但是x不会发生位的变化
   }
 }
 
