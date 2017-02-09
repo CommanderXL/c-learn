@@ -2,8 +2,8 @@
 
 void del_digit(char str[]) {
   unsigned i = 0, j;
-  char ns[] = "";
 
+  // 相当于2个遍历的指针, 一个用以遍历老数据，一个用以遍历新数据
   while(str[i]) {
     if(!(str[i] >= '0' && str[i] <= '9')) {
       str[j++] = str[i];
