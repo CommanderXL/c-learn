@@ -3,14 +3,15 @@
 int main(void) {
   int ch;
 
-  /*while ((ch = getchar()) != EOF) {
-    putchar(ch);
-  }*/
+  while ((ch = getchar()) != EOF) {
+    printf("%c", ch);
+    //putchar(ch);
+  }
 
-  do {
+ /* do {
     ch = getchar();
     printf("ch = %d\n", ch);
-  } while (ch != EOF);
+  } while (ch != EOF);*/
   
   return 0;
 }

@@ -19,14 +19,7 @@ void yesterday(int *y, int *m, int *d) {
   MONTH[1] = isLeapYear(*y) ? 29 : 28;
 
   max = MONTH[*m - 1];
-
-  // 对二月份的判断
-  /*if(isFeb(*m)) {
-    max = isLeapYear(*y) ? 29 : 28;
-  } else {
-    max = MONTH[*m + 1];
-  }*/
-
+  
   if(min < *d  && *d< max) {
     *d = *d - 1;
     //printf("昨天的日期是: %d年%d月%d日.", *y, *m, *d - 1);
