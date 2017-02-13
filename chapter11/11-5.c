@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// *tmp 通过指针进行取值
+// *tmp++ 单单进行这样的操作去取值是不行的, 需要使用*(tmp - 1)
+
 void del_digit(char *str)
 {
   char *tmp = str;
