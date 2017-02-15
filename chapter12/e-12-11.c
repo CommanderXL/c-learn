@@ -3,6 +3,9 @@
 
 #define sqr(x) ((x) * (x))
 
+// 结构体的成员不限于基本的int型或double型
+// 也可以是结构体, 数组类型或枚举类型
+
 typedef struct {
   int x;
   int y;
